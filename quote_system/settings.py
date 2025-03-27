@@ -15,6 +15,20 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# 关闭调试模式
+DEBUG = False
+
+# 允许访问的主机，可根据实际情况修改
+ALLOWED_HOSTS = ['yourdomain.com', 'youripaddress']
+
+# 生成新的 SECRET_KEY
+# 可以使用以下命令生成新的 SECRET_KEY：
+# python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+SECRET_KEY = 'your_new_secret_key'
+
+# BASE_DIR = 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
