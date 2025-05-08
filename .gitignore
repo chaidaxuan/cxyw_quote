@@ -1,1 +1,49 @@
 /staticfiles/
+# Django 项目 .gitignore 模板
+
+# 开发环境文件
+*.sqlite3
+*.sqlite3-journal
+
+# 虚拟环境目录（根据你使用的工具调整名称）
+venv/
+/myenv/
+/myenv1/
+.myenv/
+.myenv1/
+env/
+.venv/
+venv.bak/
+.env/
+
+# Python 编译文件和缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 本地设置文件（包含敏感信息）
+settings/local.py
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+secrets.json
+
+# 静态文件收集目录（生产环境生成）
+staticfiles/
+
+# 媒体文件目录（用户上传内容）
+media/
+
+# 日志文件
+*.log
+*.pot
+
+# 测试覆盖报告
+.coverage
+htmlcov/
+
+# 打包文件
+*.egg
+*.egg-info
