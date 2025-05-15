@@ -11,15 +11,16 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from pickle import TRUE
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # 关闭调试模式
-DEBUG = False
+DEBUG = True
 
 # 允许访问的主机，可根据实际情况修改
-ALLOWED_HOSTS = ['yourdomain.com', 'youripaddress']
+ALLOWED_HOSTS = ['*']
 
 # 生成新的 SECRET_KEY
 # 可以使用以下命令生成新的 SECRET_KEY：
@@ -37,9 +38,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 SECRET_KEY = 'django-insecure-i_cy@6t*p)5oj7=njhsk_s8a5yymq@4aw5eps_8(l@7x*8-llz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
